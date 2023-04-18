@@ -1,9 +1,16 @@
-a = input()
-b = input()
-c = input()
-if((a>b or a==b) and (a>c or a==c)):
-  print(a)
-elif((b>c or b==c)):
-  print(b)
+a = int(input())
+b = int(input())
+c = int(input())
+if(a==b):
+  print("a and b are equal")
+elif(b==c):
+  print("b and c are equal")
+elif(a==c):
+  print("a and c are equal")
 else:
-  print(c)
+  if(a>b and a>c):
+    print("a is greatest")
+  elif(b>c):
+    print("b is greatest")
+  else:
+    print("c is gratest")
